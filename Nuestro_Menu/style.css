@@ -1,0 +1,403 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+/*Nav*/
+
+.navbar {
+    width: 100%;
+    background-color: #D7981C;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nave-link {
+    color: black;
+    padding: 0 20px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 50px;
+    transition: color 0.3s, padding 0.3s;
+}
+
+.nave-link:hover {
+    color: #8D1011;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #8D1011;
+}
+
+.logo {
+    width: 110px;
+    margin-right: 20px;
+}
+
+.collapse {
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+/* MAIN MENU SECTION */
+
+.main-menu {
+    padding: 60px 20px;
+    background-color: #e9f5f2;
+}
+
+.main-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #8D1011;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.main-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #FF6600;
+    margin: 10px auto 0;
+}
+
+.platillos-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.platillo-card {
+    background-color: #8D1011;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform .3s, box-shadow .3s;
+    cursor: pointer;
+}
+
+.platillo-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+.platillo-img {
+    width: 100%;
+    height: auto;
+}
+
+.platillo-info {
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+
+.precio {
+    margin: 15px 0;
+}
+
+.price {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FF6600;
+}
+
+.price:hover{
+    color: white;
+}
+
+.platillo-info h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.platillo-info p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.icon-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.icon-group i {
+    color: #FF6600;
+    font-size: 24px;
+    transition: color .3s;
+}
+
+.icon-group i:hover {
+    color: white;
+}
+
+.download-btn {
+    text-align: center;
+}
+
+.btn-download {
+    background-color: #FF6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #8D1011;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #8D1011;
+    color: white;
+    padding: 40px 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-links, .footer-contact {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-links h4, .footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer-links ul {
+    list-style-type: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #FF6600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #F8F8F8;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #FF6600;
+    padding-top: 20px;
+}
+
+.footer-socials {
+    margin-bottom: 10px;
+}
+
+.footer-socials .social-icon {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-socials .social-icon:hover {
+    color: #FF6600;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .nave-link {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .platillos-box {
+        flex-direction: column;
+    }
+
+    .platillo-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .platillo-info h3 {
+        font-size: 18px;
+    }
+
+    .platillo-info p {
+        font-size: 14px;
+    }
+
+    .download-btn {
+        text-align: center;
+    }
+
+    .btn-download {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .footer-top, .footer-bottom{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        width: 120px;
+    }
+
+    .footer-links ul {
+        padding: 0;
+    }
+
+    .footer-links{
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    .footer-socials a {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+}
+
+/* Estilos para pantallas entre 481px y 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .logo {
+        width: 45px;
+    }
+
+    .nave-link {
+        font-size: 17px;
+        padding: 0 15px;
+    }
+
+    .main-title {
+        font-size: 32px;
+    }
+
+    .platillos-box {
+        flex-direction: column;
+    }
+
+    .platillo-card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .platillo-info h3 {
+        font-size: 20px;
+    }
+
+    .platillo-info p {
+        font-size: 16px;
+    }
+
+    .download-btn {
+        text-align: center;
+    }
+
+    .btn-download {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+
+    .footer-logo img {
+        width: 140px;
+    }
+
+    .footer-links ul {
+        padding: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 15px;
+    }
+
+    .footer-socials a {
+        font-size: 22px;
+        margin-right: 15px;
+    }
+
+    .footer-top, .footer-bottom{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links{
+        padding-left: 16px;
+        padding-bottom: 10px;
+    }
+}
