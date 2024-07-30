@@ -1,0 +1,452 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+/*Nav*/
+
+.navbar {
+    width: 100%;
+    background-color: #D7981C;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nave-link {
+    color: black;
+    padding: 0 20px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 50px;
+    transition: color 0.3s, padding 0.3s;
+}
+
+.nave-link:hover {
+    color: #8D1011;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #8D1011;
+}
+
+.logo {
+    width: 110px;
+    margin-right: 20px;
+}
+
+.collapse {
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+
+/* QUIENES SOMOS SECTION */
+
+.quienes-somos {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.quienes-somos-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #8D1011;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.quienes-somos-title::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 5px;
+    background-color: #FF6600;
+    margin: 10px auto 0;
+}
+
+.quienes-somos-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.quienes-somos-text {
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.quienes-somos-text p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    position: relative;
+    padding: 0 20px;
+}
+
+.quienes-somos-text p::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #8D1011;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.quienes-somos-text p:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.quienes-somos-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+.quienes-somos-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.quienes-somos-image:hover img {
+    transform: scale(1.05);
+    filter: brightness(90%);
+}
+
+/* MISION Y VISION SECTION */
+
+.mision-vision {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.mision-vision-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #8D1011;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.mision-vision-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #FF6600;
+    margin: 10px auto 0;
+}
+
+.mision-vision-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.mision-vision-box {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.mision-vision-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-color: #FF6600;
+    color: white;
+}
+
+.mision-vision-box h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: inherit;
+    margin-bottom: 15px;
+}
+
+.mision-vision-box p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: inherit;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.mision-vision-box .icon {
+    font-size: 36px;
+    color: inherit;
+    margin-top: 20px;
+    transition: color 0.3s;
+}
+
+.video-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.video-title {
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #8D1011;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.video-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #FF6600;
+    margin: 10px auto 0;
+}
+
+.video-container iframe {
+    max-width: 100%;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #8D1011;
+    color: white;
+    padding: 40px 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-links, .footer-contact {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-links h4, .footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer-links ul {
+    list-style-type: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #FF6600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #F8F8F8;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #FF6600;
+    padding-top: 20px;
+}
+
+.footer-socials {
+    margin-bottom: 10px;
+}
+
+.footer-socials .social-icon {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-socials .social-icon:hover {
+    color: #FF6600;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .quienes-somos-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quienes-somos-text {
+        padding: 0 10px;
+    }
+
+    .quienes-somos-title {
+        font-size: 28px;
+    }
+
+    .quienes-somos-title::after {
+        width: 80px;
+    }
+
+    .quienes-somos-text p {
+        font-size: 16px;
+    }
+
+    .mision-vision-title {
+        font-size: 28px;
+    }
+
+    .mision-vision-title::after {
+        width: 80px;
+    }
+
+    .mision-vision-box {
+        height: 350px;
+    }
+
+    .mision-vision-box h3 {
+        font-size: 20px;
+    }
+
+    .mision-vision-box p {
+        font-size: 14px;
+    }
+
+    .footer-top, .footer-bottom{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video-container iframe {
+        max-width: 100%;
+        height: 215px;
+    }
+
+    .footer-links{
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .quienes-somos-title {
+        font-size: 24px;
+    }
+
+    .quienes-somos-title::after {
+        width: 60px; /* Ajusta el ancho de la línea en pantallas muy pequeñas */
+    }
+
+    .quienes-somos-text p {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+    .mision-vision-title {
+        font-size: 24px;
+    }
+
+    .mision-vision-title::after {
+        width: 60px;
+    }
+
+    .mision-vision-box {
+        height: 300px;
+    }
+
+    .mision-vision-box h3 {
+        font-size: 18px;
+    }
+
+    .mision-vision-box p {
+        font-size: 12px;
+    }
+
+    .footer-top, .footer-bottom{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video-container iframe {
+        max-width: 100%;
+        height: 215px;
+    }
+
+    .footer-links{
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
